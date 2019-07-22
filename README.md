@@ -1,1 +1,3 @@
 # MyWebCourse
+
+Author: Andrew Schueler
