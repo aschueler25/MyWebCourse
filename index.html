@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basics of HTML, CSS and JavaScript</title>
+
+    <style>
+        div {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid purple;
+            background-color: rgb(240, 196, 196);
+            color: purple
+        }
+        div#hobbies {
+            font-weight: bold;
+            color: red;
+        }
+
+    </style>
+    <script>
+       
+
+        function init() {
+            let me = {name: 'Andy', email: 'andrew.schueler@ssa.gov', 
+                      hobbies: [ 'guitar', 'video games', 'putty']}
+
+            me.name = 'Andrew';
+
+            let hobbiesStr = '<ul>';
+            me.hobbies.forEach( hobFunction );
+            
+            function hobFunction(item, index) 
+            {
+                hobbiesStr += '<li>' + (index+1) + '. ' + item + '</li>';
+            }
+            hobbiesStr += '</ul>'
+            
+            document.getElementById("hobbies").innerHTML = hobbiesStr;
+            
+       
+            document.getElementById("name").innerHTML = me.name;
+        }
+    </script>
+</head>
+<body onload="init()">
+    
+<div id="name"></div>
+
+<div id="hobbies"></div>
+
+
+</body>
+</html>
