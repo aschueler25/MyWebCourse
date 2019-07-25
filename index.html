@@ -30,26 +30,36 @@
             me.name = 'Andrew';
 
             let hobbiesStr = '<ul>';
-            me.hobbies.forEach( hobFunction );
-            
-            function hobFunction(item, index) 
-            {
+            me.hobbies.forEach( function( item, index ) {
                 hobbiesStr += '<li>' + (index+1) + '. ' + item + '</li>';
-            }
+            });
             hobbiesStr += '</ul>'
             
             document.getElementById("hobbies").innerHTML = hobbiesStr;
-            
        
             document.getElementById("name").innerHTML = me.name;
         }
     </script>
 </head>
 <body onload="init()">
+
+    <nav>
+        <ul>
+            <li>
+                <a href="course-outline.html">Course Outline</a>
+            </li>
+            <li>
+                <a href="recipes.html">Recipes</a>
+            </li>
+        </ul>
+    </nav>
     
+
+
 <div id="name"></div>
 
 <div id="hobbies"></div>
+
 
 
 </body>
