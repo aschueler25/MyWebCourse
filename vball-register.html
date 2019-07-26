@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vollyball Registration</title>
+</head>
+<body>
+    
+    <form action="/submitIt" method="post">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label>First Name * <input type="text" name="fname"></label><br/>
+            <label>Last Name * <input type="text" name="lname"></label><br/>
+            <label>Date of Birth * <input type="text" name="dob"></label><br/>
+            <label>Email * <input type="text" name="email"></label><br/>
+            <label>Password * <input type="text" name="psswrd"></label><br/>
+            <label>Repeat Password * <input type="text" name="pssConfirm"></label><br/>
+            <label>Your Github URL <input type="text" name="gitURL"></label><br/>
+            <label>Phone <input type="text" name="phone"></label><br/><br/>
+
+            <label>Shoe Size <input type="text" name="shoe"></label><br/>
+            <label>Skill Level (1 novice, 10 expert) <input type="skill" name="phone"></label><br/>
+
+
+        </fieldset>
+    
+        <fieldset>
+                <legend>Billing Address</legend>
+                <label>Address * <textarea name="address" rows="4" cols="30">
+                    </textarea></label><br/>
+                <label>Postal Code * <input type="text" name="pssConfirm"></label><br/>
+                <label>Country * <select name="country">
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Mexico">Mexico</option>
+                </select></label><br/>
+    
+            </fieldset>    
+
+            <fieldset>
+                <legend>Card Details</legend>
+                <label>Card details 
+                    <input type="radio" name="cardType" value="VISA">VISA</input>
+                    <input type="radio" name="cardType" value="Mastercard">Mastercard</input>
+                    <input type="radio" name="cardType" value="AMEX">AMEX</input>
+                </label><br/>
+                <label>Name * <input type="text" name="cardName"></label><br/>
+                <label>Card Number * <input type="text" name="cardNumber"></label><br/>
+                <label>Security Code * <input type="text" name="cardCode"></label><br/>
+                <label>Expiry Date <input type="text" name="cardExpiry"></label><br/>
+
+            </fieldset>    
+    
+    </form>
+
+
+
+</body>
+</html>
